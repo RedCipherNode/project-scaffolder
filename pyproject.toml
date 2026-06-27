@@ -1,0 +1,5 @@
+[project]
+name = "project-scaffolder"
+version = "0.1.0"
+description = "A template-driven project scaffolder."
+requires-python = ">=3.11"
