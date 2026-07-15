@@ -10,6 +10,9 @@ namespace scaffold
     {
     public:
         GenerationResult generate(const GenerationRequest &request);
+
+    private:
+        bool validate(const GenerationRequest &request);
     };
 
 }

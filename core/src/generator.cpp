@@ -1,16 +1,19 @@
-#include <scaffold/generator.hpp>
+#include <scaffold/convention_engine.hpp>
 
-namespace scaffold
+GenerationResult Generator::generate(const GenerationRequest &request)
 {
+    GenerationResult result;
 
-    GenerationResult Generator::generate(const GenerationRequest &request)
-    {
-        (void)request;
-
-        GenerationResult result;
-        result.success = true;
-
+    if (!validate(request))
         return result;
-    }
 
+    ConventionEngine convention;
+
+    auto context = convention.resolve(request);
+
+    (void)context;
+
+    result.success = true;
+
+    return result;
 }
