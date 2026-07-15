@@ -1,7 +1,7 @@
-#include <iostream>
+#include "application.hpp"
 
-int main()
+int main(int argc, char *argv[])
 {
-    std::cout << "Project Scaffolder v0.1.0\n";
-    return 0;
+    Application app;
+    return app.run(argc, argv);
 }

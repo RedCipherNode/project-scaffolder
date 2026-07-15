@@ -55,3 +55,11 @@ The following items are intentionally postponed.
 - Web interface
 - Cloud synchronization
 - Remote template repository
+
+### Generation
+
+- Interactive project creation
+- Language conventions
+- Placeholder replacement
+- Additional file generation
+- Automatic directory creation for custom files
