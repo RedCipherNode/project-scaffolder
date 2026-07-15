@@ -1,4 +1,5 @@
 #include <scaffold/convention_engine.hpp>
+#include <scaffold/naming.hpp>
 
 namespace scaffold
 {
@@ -11,7 +12,8 @@ namespace scaffold
         context.language = request.language;
         context.workflow = request.workflow;
 
-        context.repository_name = request.project_name;
+        context.repository_name =
+            naming::repository(request.project_name);
 
         return context;
     }

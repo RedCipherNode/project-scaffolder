@@ -11,9 +11,7 @@ GenerationResult Generator::generate(const GenerationRequest &request)
 
     auto context = convention.resolve(request);
 
-    (void)context;
-
-    result.success = true;
+    std::cout << context.repository_name << '\n';
 
     return result;
 }
